@@ -1,6 +1,22 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    //jcenter
+    id 'com.novoda.bintray-release'
+}
+
+publish {
+    //bintray.com用户名
+    userOrg = 'johnzhang'
+    //这个自己可以自己随便写，这是导入依赖库的名称
+    groupId = 'com.jz'
+    //项目名称，创建Package的那个名称
+    artifactId = 'JUtils'
+    //版本号
+    publishVersion = '1.0.0'
+    //说明
+    desc = 'Common Utils'
+    website = 'https://github.com/jzhang2k15/Jutils'
 }
 
 android {
