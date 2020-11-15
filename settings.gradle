@@ -1,0 +1,3 @@
+include ':JUtils'
+include ':app'
+rootProject.name = "JUtils"
